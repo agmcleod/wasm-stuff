@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Rogue Assembly</title>
+    <style>
+        .row {
+          display: flex;
+        }
+
+        .row_cell {
+          flex: 1;
+        }
+
+        .center {
+          text-align: center;
+        }
+      </style>
+  </head>
+  <body>
+    <div class="row">
+      <div class="row_cell center">
+        <h1>Rogue WebAssembly</h1>
+      </div>
+    </div>
+    <div class="row">
+      <div class="row_cell" id="rogueCanvas"></div>
+      <div class="row_cell" id="statsContainer" style="padding: 15px">
+        <div class="row_cell center">
+          <h2>Stats</h2>
+        </div>
+        <p>
+          <span><strong>Hitpoints:</strong></span>&nbsp;
+          <span id="hitpoints">0</span>&nbsp;/&nbsp;
+          <span id="max_hitpoints">0</span>
+        </p>
+        <p>
+          <span><strong>Moves</strong></span>&nbsp;
+          <span id="moves">0</span>
+        </p>
+      </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/rot-js@2/dist/rot.js"></script>
+    <script src="./bootstrap.js"></script>
+  </body>
+</html>
